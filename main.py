@@ -2,14 +2,12 @@ import requests
 import telegram
 import time
 import os
-from dotenv import load_dotenv
 
 
 def main():
-    load_dotenv()
-    token = os.getenv("token")
-    chat_id = os.getenv("chat_id")
-    devman_token = os.getenv("devman_token")
+    token = os.environ("token")
+    chat_id = os.environ("chat_id")
+    devman_token = os.environ("devman_token")
     bot = telegram.Bot(token=token)
     url = 'https://dvmn.org/api/long_polling/'
     headers = {
