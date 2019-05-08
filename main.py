@@ -5,9 +5,9 @@ import os
 
 
 def main():
-    token = os.environ("token")
-    chat_id = os.environ("chat_id")
-    devman_token = os.environ("devman_token")
+    token = os.environ["token"]
+    chat_id = os.environ["chat_id"]
+    devman_token = os.environ["devman_token"]
     bot = telegram.Bot(token=token)
     url = 'https://dvmn.org/api/long_polling/'
     headers = {
