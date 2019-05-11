@@ -12,7 +12,7 @@ def main():
     token = os.environ["token"]
     chat_id = os.environ["chat_id"]
     devman_token = os.environ["devman_token"]
-    token_logger = os.environ['togen_log']
+    token_logger = os.environ['token_log']
 
     logger_bot = telegram.Bot(token=token_logger)
     logger = logging.getLogger("bot-logger")
